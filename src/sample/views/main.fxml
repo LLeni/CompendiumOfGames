@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.Main"
+            prefHeight="400.0" prefWidth="800.0">
+
+            <children>
+
+                <VBox spacing="10">
+                    <TabPane>
+                        <Tab fx:id="tabInput" text="Ввод" closable="false" >
+                            <fx:include source="input.fxml"/>
+                        </Tab>
+                        <Tab fx:id="tabTable" text="Таблица" closable="false">
+                            <fx:include source="table.fxml"/>
+                        </Tab>
+                        <Tab fx:id="tabChart" text="График" closable="false">
+                            <fx:include source="chart.fxml"/>
+                        </Tab>
+                        <Tab fx:id="tabGuide" text="Справка" closable="false">
+                            <fx:include source="guide.fxml"/>
+                        </Tab>
+                    </TabPane>
+                </VBox>
+            </children>
+
+</AnchorPane>
